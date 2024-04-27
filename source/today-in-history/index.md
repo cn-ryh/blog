@@ -22,7 +22,7 @@ date: 2023-12-27 10:10:10
   }
   path += `${today.getDate()}`
 
-  fetch(`https://shwst.one/today-in-history-data/${path}.json`)
+  fetch(`https://blog.cnryh.cn/today-in-history-data/${path}.json`)
     .then((response) => response.json())
     .then((data) => {
       content.innerHTML = `今天是${today.getMonth() + 1}月${today.getDate()}日，在历史上的今天，发生了这些事：`

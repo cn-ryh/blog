@@ -108,12 +108,9 @@ menu:
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
-  widgets: 
-    default: /widgets/ || fa-solid fa-toolbox
-    editor: https://shwst.one/editor/ || fa fa-pen-nib
-    TodayInHistory: https://shwst.one/today-in-history/ || fa-solid fa-book
-    ADarkRoom: https://shwst.one/adarkroom/ || fa-solid fa-gamepad
-    MBTI: https://shwst.one/mbti/ || fa-solid fa-circle-user
+  editor: https://blog.cnryh.cn/editor/ || fa fa-pen-nib
+  TodayInHistory: https://blog.cnryh.cn/today-in-history/ || fa-solid fa-book
+  MBTI: https://blog.cnryh.cn/mbti/ || fa-solid fa-circle-user
   #schedule: /schedule/ || fa fa-calendar
   # sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404.html || fa fa-heartbeat
@@ -526,13 +523,6 @@ note:
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
 
-# Tabs tag
-tabs:
-  # Make the nav bar of tabs with long content stick to the top.
-  sticky: false
-  transition:
-    tabs: false
-    labels: true
 
 # PDF tag
 # NexT will try to load pdf files natively, if failed, pdf.js will be used.
@@ -572,12 +562,12 @@ math:
   # Default (false) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in front-matter.
   # If you set it to true, it will load mathjax / katex script EVERY PAGE.
-  every_page: true
+  every_page: false
 
   mathjax:
     enable: true
     # Available values: none | ams | all
-    tags: none
+    tags: all
 
   katex:
     enable: false
@@ -758,26 +748,6 @@ utterances:
 # For more information: https://isso-comments.de
 isso: # <data_isso>
 
-giscus:
-  enable: true
-  repo: ShwStone/shwblog
-  repo_id: R_kgDOHrI12g
-  category: Announcements
-  category_id: DIC_kwDOHrI12s4CYHJu
-  # Available values: pathname | url | title | og:title
-  mapping: pathname
-  # Available values: 0 | 1 
-  reactions_enabled: 1
-  # Available values: 0 | 1 
-  emit_metadata: 1
-  # Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme
-  theme: light
-  # Available values: en | zh-CN
-  lang: zh-CN
-  # Available value: anonymous
-  crossorigin: anonymous
-
-
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services
 # See: https://theme-next.js.org/docs/third-party-services/post-widgets
@@ -939,7 +909,6 @@ tidio:
 # ---------------------------------------------------------------
 
 vendors:
-  mathjax: https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js
   # The CDN provider of NexT internal scripts.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Warning: If you are using the latest master branch of NexT, please set `internal: local`
@@ -991,3 +960,11 @@ images: images
 #       boxForm: horizontal
 #       position: middleRight
 #       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
+
+
+tabs:
+  # Make the nav bar of tabs with long content stick to the top.
+  sticky: false
+  transition:
+    tabs: false
+    labels: true

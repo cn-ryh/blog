@@ -35,18 +35,6 @@ mathjax:
   version: 3.2.2
   file: es5/tex-mml-chtml.js
   integrity: sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=
-katex:
-  name: katex
-  version: 0.16.9
-  file: dist/katex.min.css
-  alias: KaTeX
-  integrity: sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM=
-copy_tex_js:
-  name: katex
-  version: 0.16.9
-  file: dist/contrib/copy-tex.min.js
-  alias: KaTeX
-  integrity: sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs=
 pjax:
   name: '@next-theme/pjax'
   version: 0.6.0
