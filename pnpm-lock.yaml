@@ -41,6 +41,9 @@ importers:
       hexo-next-giscus:
         specifier: ^1.3.0
         version: 1.3.0
+      hexo-next-three:
+        specifier: github:next-theme/hexo-next-three
+        version: https://codeload.github.com/next-theme/hexo-next-three/tar.gz/e602c3266d8731fd9e59d152ed8353c8d630c2df
       hexo-optimize:
         specifier: ^3.3.0
         version: 3.3.0
@@ -56,9 +59,9 @@ importers:
       hexo-server:
         specifier: ^3.0.0
         version: 3.0.0
-      hexo-sliding-spoiler:
-        specifier: ^1.2.1
-        version: 1.2.1
+      hexo-symbols-count-time:
+        specifier: ^0.7.1
+        version: 0.7.1
       hexo-util:
         specifier: ^3.3.0
         version: 3.3.0
@@ -288,6 +291,10 @@ packages:
   domelementtype@2.3.0:
     resolution: {integrity: sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw==}
 
+  domhandler@3.3.0:
+    resolution: {integrity: sha512-J1C5rIANUbuYK+FuFL98650rihynUOEzRLxW+90bKZRWB6A1X1Tf82GxR1qAWLyfNPRvjqfip3Q5tdYlmAa9lA==}
+    engines: {node: '>= 4'}
+
   domhandler@4.3.1:
     resolution: {integrity: sha512-GrwoxYN+uWlzO8uhUXRl0P+kHE4GtVPfYzVLcUxPL7KNdHKj66vvlhiweIHqYYXWlw+T8iLMp42Lm67ghw4WMQ==}
     engines: {node: '>= 4'}
@@ -330,10 +337,6 @@ packages:
 
   escape-html@1.0.3:
     resolution: {integrity: sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==}
-
-  escape-string-regexp@2.0.0:
-    resolution: {integrity: sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==}
-    engines: {node: '>=8'}
 
   esprima@4.0.1:
     resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
@@ -400,10 +403,6 @@ packages:
     resolution: {integrity: sha512-sJJI0GNmejYiwBvgnGRKn5V3sbODB4dNPr8jyw2Qp0PRHr4Uuyv8iyxw6WfK3+T7yvzYvJOh+tZ7jnwr2BYARA==}
     engines: {node: '>=14'}
 
-  hexo-fs@2.0.1:
-    resolution: {integrity: sha512-IgAhdjYN3GCluy2MSeeX+F/RkyVsjjzZO7Bbhj3aYoSBqcJhJsR1Nz+Powp26siQPuIFLNNYjqmfPbVg2vg+Mg==}
-    engines: {node: '>=8'}
-
   hexo-fs@4.1.3:
     resolution: {integrity: sha512-Q92zQ5PlVDouvSWFLXQoFSTLIUIODikUJs2BfAXQglyOEjN1dOQn1Z5Nimk/7GHof17R5h/uObCQLnZAjzI2tg==}
     engines: {node: '>=14'}
@@ -448,6 +447,10 @@ packages:
   hexo-next-giscus@1.3.0:
     resolution: {integrity: sha512-2Btg3zWffTYgGj494OjPwtmG5gZUMoNrd7c4LKwdZQwROG7u1kF5ZBlROs4ngwellpM4fSS5dTh2nyZtcq8lnA==}
 
+  hexo-next-three@https://codeload.github.com/next-theme/hexo-next-three/tar.gz/e602c3266d8731fd9e59d152ed8353c8d630c2df:
+    resolution: {tarball: https://codeload.github.com/next-theme/hexo-next-three/tar.gz/e602c3266d8731fd9e59d152ed8353c8d630c2df}
+    version: 2.2.0
+
   hexo-optimize@3.3.0:
     resolution: {integrity: sha512-h/CYQIbz94N08tlht4fnyIVjqqPeBN+4xvQvfs8k7NKI59JPynueaLFCM71IiYtSpQOJiFU7TJLZWcWRqihU5A==}
 
@@ -471,8 +474,13 @@ packages:
     resolution: {integrity: sha512-u4s0ty9Aew6jV+a9oMrXBwhrRpUQ0U8PWM/88a5aHgDru58VY81mVrxOFxs788NAsWQ8OvsJtF5m7mnXoRnSIA==}
     engines: {node: '>=12.13.0'}
 
-  hexo-sliding-spoiler@1.2.1:
-    resolution: {integrity: sha512-1BrTH7FY1KO34RTpzyEKyo9KToIIT+exZ9YrLyVp+fcQvrDqacF6mZnt47XkBy1jj2FlDFYFbke7pjSjscLDAA==}
+  hexo-symbols-count-time@0.7.1:
+    resolution: {integrity: sha512-Zw19uxRIT/3VCvMQytG6HfBJc/IvfFJYui8cg6vyFAtDxkPOoZ1UlsPjrBRXYAqO6VjLc/vRi+Jthj38pKNPlw==}
+    engines: {node: '>=10.9.0'}
+
+  hexo-util@1.9.0:
+    resolution: {integrity: sha512-WXv8IYd9HFtP6u/y7uoI//Fmg88uhKKDto9KeNNRdWf4HG/bRh/1NcSQZWu81DOZNshWD1rvFU8OKb7bUnX1WA==}
+    engines: {node: '>=8.6.0'}
 
   hexo-util@2.5.0:
     resolution: {integrity: sha512-l0zkqcg2524KPO84HQe0JROpPlCM/dEnCJaJrZ1qsq+3+/YxhDa0zxiGtUVY1dtrWzOK/V11Zj+UEklhGP8Jeg==}
@@ -497,6 +505,13 @@ packages:
   highlight.js@11.9.0:
     resolution: {integrity: sha512-fJ7cW7fQGCYAkgv4CPfwFHrfd/cLS4Hau96JuJ+ZTOWhjnhoeN1ub1tFmALm/+lW5z4WCAuAV9bm05AP0mS6Gw==}
     engines: {node: '>=12.0.0'}
+
+  highlight.js@9.18.5:
+    resolution: {integrity: sha512-a5bFyofd/BHCX52/8i8uJkjr9DYwXIPnM/plwI6W7ezItLGqzt7X2G2nXuYSfsIJdkwwj/g9DG1LkcGJI/dDoA==}
+    deprecated: Support has ended for 9.x series. Upgrade to @latest
+
+  htmlparser2@4.1.0:
+    resolution: {integrity: sha512-4zDq1a1zhE4gQso/c5LP1OtrhYTncXNSpvJYtWJBtXAETPlMfi3IFNjGuQbYLuVY4ZR0QMqRVvo4Pdy9KLyP8Q==}
 
   htmlparser2@6.1.0:
     resolution: {integrity: sha512-gyyPk6rgonLFEDGoeRgQNaEUvdJ4ktTmmUh/h2t7s+M8oPpIPxgNACWa+6ESR57kXstwqPiCut0V8NRpcwgU7A==}
@@ -761,6 +776,10 @@ packages:
     resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
     engines: {node: '>=6'}
 
+  punycode.js@2.3.1:
+    resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
+    engines: {node: '>=6'}
+
   range-parser@1.2.1:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}
     engines: {node: '>= 0.6'}
@@ -845,6 +864,9 @@ packages:
     resolution: {integrity: sha512-laJTa3Jb+VQpaC6DseHhF7dXVqHTfJPCRDaEbid/drOhgitgYku/letMUqOXFoWV0zIIUbjpdH2t+tYj4bQMRQ==}
     engines: {node: '>=8'}
 
+  striptags@3.2.0:
+    resolution: {integrity: sha512-g45ZOGzHDMe2bdYMdIvdAfCQkCTDMGBazSw1ypMowwGIee7ZQ5dU0rBJ8Jqgl+jAKIv4dbeE1jscZq9wid1Tkw==}
+
   stylus@0.62.0:
     resolution: {integrity: sha512-v3YCf31atbwJQIMtPNX8hcQ+okD4NQaTuKGUWfII8eaqn+3otrbttGL1zSMZAAtiPsBztQnujVBugg/cXFUpyg==}
     hasBin: true
@@ -864,6 +886,9 @@ packages:
 
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
+
+  three@0.163.0:
+    resolution: {integrity: sha512-HlMgCb2TF/dTLRtknBnjUTsR8FsDqBY43itYop2+Zg822I+Kd0Ua2vs8CvfBVefXkBdNDrLMoRTGCIIpfCuDew==}
 
   through2@4.0.2:
     resolution: {integrity: sha512-iOqSav00cVxEEICeD7TjLB1sueEL+81Wpzp2bY17uZjZN0pWZPuo4suZ/61VujxmqSGFfgOcNuTZ85QJwNZQpw==}
@@ -1125,6 +1150,10 @@ snapshots:
 
   domelementtype@2.3.0: {}
 
+  domhandler@3.3.0:
+    dependencies:
+      domelementtype: 2.3.0
+
   domhandler@4.3.1:
     dependencies:
       domelementtype: 2.3.0
@@ -1162,8 +1191,6 @@ snapshots:
   entities@4.5.0: {}
 
   escape-html@1.0.3: {}
-
-  escape-string-regexp@2.0.0: {}
 
   esprima@4.0.1: {}
 
@@ -1238,13 +1265,6 @@ snapshots:
     dependencies:
       js-yaml: 4.1.0
 
-  hexo-fs@2.0.1:
-    dependencies:
-      bluebird: 3.7.2
-      chokidar: 3.6.0
-      escape-string-regexp: 2.0.0
-      graceful-fs: 4.2.11
-
   hexo-fs@4.1.3:
     dependencies:
       bluebird: 3.7.2
@@ -1306,6 +1326,12 @@ snapshots:
     dependencies:
       '@next-theme/utils': 1.3.0
 
+  hexo-next-three@https://codeload.github.com/next-theme/hexo-next-three/tar.gz/e602c3266d8731fd9e59d152ed8353c8d630c2df:
+    dependencies:
+      '@next-theme/utils': 1.3.0
+      terser: 5.30.4
+      three: 0.163.0
+
   hexo-optimize@3.3.0:
     dependencies:
       bluebird: 3.7.2
@@ -1356,9 +1382,22 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  hexo-sliding-spoiler@1.2.1:
+  hexo-symbols-count-time@0.7.1:
     dependencies:
-      hexo-fs: 2.0.1
+      hexo-util: 1.9.0
+
+  hexo-util@1.9.0:
+    dependencies:
+      bluebird: 3.7.2
+      camel-case: 4.1.2
+      cross-spawn: 7.0.3
+      deepmerge: 4.3.1
+      highlight.js: 9.18.5
+      htmlparser2: 4.1.0
+      prismjs: 1.29.0
+      punycode.js: 2.3.1
+      strip-indent: 3.0.0
+      striptags: 3.2.0
 
   hexo-util@2.5.0:
     dependencies:
@@ -1424,6 +1463,15 @@ snapshots:
   highlight.js@10.7.3: {}
 
   highlight.js@11.9.0: {}
+
+  highlight.js@9.18.5: {}
+
+  htmlparser2@4.1.0:
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 3.3.0
+      domutils: 2.8.0
+      entities: 2.2.0
 
   htmlparser2@6.1.0:
     dependencies:
@@ -1669,6 +1717,8 @@ snapshots:
 
   prismjs@1.29.0: {}
 
+  punycode.js@2.3.1: {}
+
   range-parser@1.2.1: {}
 
   readable-stream@3.6.2:
@@ -1762,6 +1812,8 @@ snapshots:
     dependencies:
       min-indent: 1.0.1
 
+  striptags@3.2.0: {}
+
   stylus@0.62.0:
     dependencies:
       '@adobe/css-tools': 4.3.3
@@ -1786,6 +1838,8 @@ snapshots:
       source-map-support: 0.5.21
 
   text-table@0.2.0: {}
+
+  three@0.163.0: {}
 
   through2@4.0.2:
     dependencies:
