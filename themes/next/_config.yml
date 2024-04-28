@@ -970,7 +970,7 @@ three:
   enable: true
   # CDN must use ESM version.
   # e.g. https://cdn.jsdelivr.net/npm/three@latest/build/three.module.min.js
-  cdn: https://cdn.jsdelivr.net/npm/three@latest/build/three.module.min.js
+  cdn: /js/third-party/three.module.min.js
   waves:
     enable: true
     cdn:
