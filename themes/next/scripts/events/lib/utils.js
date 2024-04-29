@@ -22,7 +22,6 @@ function resolve(name, file = '') {
 
 function highlightTheme(name) {
     const file = resolve('highlight.js', `styles/${name}.css`);
-    console.log(file);
     const content = fs.readFileSync(file, 'utf8');
 
     let background = '';
