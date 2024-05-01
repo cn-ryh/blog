@@ -8,6 +8,26 @@
 {% block content %}
 
   {{ partial('_macro/post.njk', {post: page}) }}
+<div id="waline" class="post-block animated fadeIn waline-block"></div>
+<script type="module" id="MathJax-script" src="/js/third-party/mathjax/es5/tex-chtml-full.js">
+</script>
+<link rel="stylesheet" href="/css/waline.css" />
+<script type="module">
+    import { init } from '/js/third-party/comments/waline.js';
+    
+    init({
+        el: `#waline`,
+        serverURL: `https://lenovo.cnryh.cn:38888/blog-comment/`,
+        texRenderer: (blockMode, tex) => {
+            MathJax.typeset([]);
+            return window.MathJax.startup.adaptor.outerHTML(
+                window.MathJax.tex2chtml(tex, {
+                    display: blockMode,
+                })
+            )
+        }
+    });
+</script>
 
 {% endblock %}
 
