@@ -108,9 +108,6 @@ menu:
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
-  editor: https://blog.cnryh.cn/editor/ || fa fa-pen-nib
-  TodayInHistory: https://blog.cnryh.cn/today-in-history/ || fa-solid fa-book
-  MBTI: https://blog.cnryh.cn/mbti/ || fa-solid fa-circle-user
   #schedule: /schedule/ || fa fa-calendar
   # sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404.html || fa fa-heartbeat
@@ -664,23 +661,23 @@ canvas_ribbon:
 # ---------------------------------------------------------------
 
 # Multiple Comment System Support
-# comments:
-#   # Available values: tabs | buttons
-#   style: tabs
-#   # Choose a comment system to be displayed by default.
-#   # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
-#   active:
-#   # Setting `true` means remembering the comment system selected by the visitor.
-#   storage: true
-#   # Lazyload all comment systems.
-#   lazyload: false
-#   # Modify texts or order for any naves, here are some examples.
-#   nav:
-#     #disqus:
-#     #  text: Load Disqus
-#     #  order: -1
-#     #gitalk:
-#     #  order: -2
+comments:
+  # Available values: tabs | buttons
+  style: tabs
+  # Choose a comment system to be displayed by default.
+  # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
+  active:
+  # Setting `true` means remembering the comment system selected by the visitor.
+  storage: true
+  # Lazyload all comment systems.
+  lazyload: false
+  # Modify texts or order for any naves, here are some examples.
+  nav:
+    #disqus:
+    #  text: Load Disqus
+    #  order: -1
+    #gitalk:
+    #  order: -2
 
 # Disqus
 # For more information: https://disqus.com
@@ -967,7 +964,7 @@ tabs:
     labels: true
 
 three:
-  enable: true
+  enable: false
   # CDN must use ESM version.
   # e.g. https://cdn.jsdelivr.net/npm/three@latest/build/three.module.min.js
   cdn: /js/third-party/three.module.min.js
