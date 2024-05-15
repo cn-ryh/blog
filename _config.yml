@@ -22,7 +22,7 @@ permalink_defaults: null
 index_generator:
   path: ""
   per_page: 15
-  order_by: -date
+  order_by: order
   pagination_dir: page
 deploy: null
 include: null
